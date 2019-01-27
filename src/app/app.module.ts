@@ -15,6 +15,7 @@ import { OtherPage } from '../pages/other/other';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { IBeacon } from "@ionic-native/ibeacon";
 import { ApiProvider } from '../providers/api/api';
 
 @NgModule({
@@ -46,7 +47,8 @@ import { ApiProvider } from '../providers/api/api';
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: ErrorHandler, useClass: IonicErrorHandler },
+    IBeacon,
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
     ApiProvider
   ]
 })
