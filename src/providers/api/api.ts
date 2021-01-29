@@ -38,6 +38,10 @@ export class ApiProvider {
   getMessage(): Observable<any> {
     return this.http.get('/api/message/get');
   }
+  serchUserName(name): Observable<any> {
+    console.log(name)
+    return this.http.get<any>(`/api/user/get?search_word=${name}&`, this.httpOptions);
+  }
 
   postSighup(name, uuid): Observable<any> {
     let postData = {
@@ -61,7 +65,4 @@ export class ApiProvider {
     return this.http.post<any>('/api/message/post', postData, this.httpOptions)
   }
 
-  serchUserName(name) :Observable<any> {
-    return this.http.get<any>(`/api/user/get?search_word=${name}&`);
-  }
 }

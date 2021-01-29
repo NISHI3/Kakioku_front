@@ -1,0 +1,17 @@
+page-user-search {
+  .slide-zoom {
+    height: 100%;
+    overflow-y: auto;
+  }
+  .scroll-content{
+    overflow: hidden;
+  }
+  .fixed-content{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    display: block;
+  }
+}

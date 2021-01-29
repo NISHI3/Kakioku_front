@@ -1,0 +1,16 @@
+page-contact {
+  .scroll-content {
+    overflow-y: hidden;
+  }
+      .active{
+        color:#666;
+  }
+  ion-slide{
+    padding-top:30px;
+  }
+  .slide-zoom {
+    height: 100%;
+    overflow-y: auto;
+  }
+
+}

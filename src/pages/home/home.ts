@@ -4,6 +4,7 @@ import { ApiProvider } from '../../providers/api/api';
 import { Ble } from '../../providers/interfaces/Ble';
 
 import { CreateLetterPage } from '../create-letter/create-letter';
+import { UserSearchPage } from '../user-search/user-search';
 import { OtherPage } from '../other/other';
 
 @Component({
@@ -23,7 +24,7 @@ export class HomePage {
     this.navCtrl.push(CreateLetterPage);
   }
   public pushContactPage() {
-    this.navCtrl.push(CreateLetterPage);
+    this.navCtrl.push(UserSearchPage);
   }
   public pushOtherPage() {
     this.navCtrl.push(OtherPage);

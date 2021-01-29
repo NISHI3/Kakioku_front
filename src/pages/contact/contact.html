@@ -1,0 +1,33 @@
+<!--
+  Generated template for the ContactPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Contact</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="user" class="segment-activated">
+      <ion-segment-button value="userSearch">
+        ユーザ検索
+      </ion-segment-button>
+
+      <ion-segment-button value="userList">
+        ユーザ一覧
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+  <div [ngSwitch]="user">
+    <page-user-search *ngSwitchCase="'userSearch'">
+    </page-user-search>
+  </div>
+</ion-content>
